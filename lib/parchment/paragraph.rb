@@ -44,7 +44,7 @@ module Parchment
     # Output the unformatted Paragraph's content as a String.
     #
     def to_s
-      @node.content
+      @text_runs.map(&:to_s).join('')
     end
     alias :text :to_s
 
@@ -54,7 +54,8 @@ module Parchment
     def to_html
       html = ''
       text_runs.each { |text_run| html << text_run.to_html }
-      styles = { 'font-size' => "#{font_size}pt" }
+      styles = {}
+      styles['font-size'] = "#{font_size}pt" unless font_size.nil?
       styles['text-align'] = @style.text_align unless @style.aligned_left?
       html_tag(:p, content: html, styles: styles)
     end

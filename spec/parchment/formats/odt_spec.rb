@@ -13,7 +13,8 @@ describe Parchment::ODT::Document do
   end
 
   describe 'reading' do
-    it_behaves_like 'sample document'
+    it_behaves_like 'sample document reading'
+    it_behaves_like 'sample document formatting'
 
     it 'styles should have formatting attributes' do
       @styles = @document.styles

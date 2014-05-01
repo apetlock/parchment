@@ -1,7 +1,6 @@
-# All document formatss must pass these tests.
 # See spec/fixtures for sample templates.
 #
-shared_examples 'sample document' do
+shared_examples 'sample document reading' do
 
   it 'should read the file' do
     @document = Parchment.read(@file_path)
@@ -26,6 +25,10 @@ shared_examples 'sample document' do
   it 'should have styles' do
     @document.styles.size.should eq @sample_style_count
   end
+end
+
+# All document formats (Except text/plain) must pass these tests.
+shared_examples 'sample document formatting' do
 
   describe 'formatting' do
     before do

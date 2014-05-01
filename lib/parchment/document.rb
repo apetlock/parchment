@@ -52,7 +52,7 @@ module Parchment
     # Output entire document as a HTML fragment String.
     #
     def to_html
-      paragraphs.map(&:to_html).join('\n')
+      paragraphs.map(&:to_html).join("\n")
     end
 
     private

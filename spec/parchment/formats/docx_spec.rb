@@ -13,6 +13,7 @@ describe Parchment::DOCX::Document do
   end
 
   describe 'reading' do
-    it_behaves_like 'sample document'
+    it_behaves_like 'sample document reading'
+    it_behaves_like 'sample document formatting'
   end
 end

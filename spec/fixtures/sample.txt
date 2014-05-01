@@ -1,0 +1,12 @@
+Sample Text Document
+Normal
+Bold
+Italic
+Underline
+This paragraph is centered.
+This paragraph is right justified.
+This paragraph is left justified.
+This paragraph has a word with all the basic formatting.
+This paragraph has different words with various styles.
+This paragraph is at 24 points.
+This paragraph has a word at 18 points.

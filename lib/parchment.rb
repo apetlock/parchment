@@ -1,6 +1,7 @@
 require 'parchment/document'
 require 'parchment/formats/odt/odt'
 require 'parchment/formats/docx/docx'
+require 'parchment/formats/txt/txt'
 
 module Parchment
 
@@ -14,6 +15,8 @@ module Parchment
       Parchment::ODT.read(path)
     when 'docx'
       Parchment::DOCX.read(path)
+    when 'txt'
+      Parchment::TXT.read(path)
     else
       raise UnsupportedFileFormatError, 'File format is not supported.'
     end

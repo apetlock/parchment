@@ -4,6 +4,21 @@ Parchment is a simple, flexible library for interacting with word processing
 document files. Initially intended for outputting .docx and .odt files as
 HTML fragments, it is built to be flexible for future use.
 
+## Why?
+
+You may ask, is there really a need for another document parsing library?
+Apparently so.
+
+I had a seemingly simple task I wanted to do: Take a Microsoft Word or Open
+Office Writer file and display it as an HTML fragment within a larger page,
+with as much formatting as necessary. I couldn't find a decent solution for
+this, especially from within a Rails app. Most other libraries are focused
+on converting whole documents, such as a Word file into a complete
+fully-compliant HTML page.
+
+I wanted the simplicity of what is seen under usage below, without
+patching together several different command-line tools. That's Parchment.
+
 ## Installation
 
 Add this line to your application's Gemfile:
