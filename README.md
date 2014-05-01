@@ -1,8 +1,8 @@
 # Parchment
 
 [![Gem Version](https://badge.fury.io/rb/parchment.svg)](http://badge.fury.io/rb/parchment)
+[![Build Status](https://travis-ci.org/apetlock/parchment.svg?branch=master)](https://travis-ci.org/apetlock/parchment)
 [![Dependency Status](https://gemnasium.com/apetlock/parchment.png)](https://gemnasium.com/apetlock/parchment)
-[![Build Status](https://secure.travis-ci.org/apetlock/parchment.png?branch=master)](https://travis-ci.org/apetlock/parchment)
 
 Parchment is a simple, flexible library for interacting with word processing
 document files. Initially intended for outputting .docx and .odt files as
