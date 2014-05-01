@@ -1,0 +1,4 @@
+# = Parchment
+#
+# Parchment is a simple library for interacting with word processing
+# document files.
