@@ -20,9 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-        require 'parchment'
-        doc = Parchment.read('path/to/file.odt')
-        doc.to_html
+    require 'parchment'
+    doc = Parchment.read('path/to/file.odt')
+    doc.to_html
 
 ## Contributing
 
